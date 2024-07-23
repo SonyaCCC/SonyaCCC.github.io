@@ -872,13 +872,13 @@ body,button {
 .page-23 {
 	background-color:#fff
 }
-.page-23.left-img img{
-	position: absolute;
+.page-23.left-img img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
-    height: 75%;
+    height: auto;
+    max-height:75%; /* 根据需要调整 */
 }
 .page-24.full-img img{
 	position: absolute;
@@ -891,13 +891,13 @@ body,button {
 .page-25 {
 	background-color:#fcc1b1
 }
-.page-25.left-img img{
-	position: absolute;
+.page-25.left-img img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
-    height: 75%;
+    height: auto;
+    max-height: 75%; /* 根据需要调整 */
 }
 .page-26 {
 	background-color:#fdeacf
@@ -911,6 +911,11 @@ body,button {
 	z-index:2;
 	width:100%;
 	text-align:center
+}
+.page-27 img{
+	width:auto;
+	height: auto;
+	max-height: 100%;
 }
 .page-28 {
 	background:#b7e7f3 url(img/iali40_bg.jpg) bottom repeat-x;
@@ -929,8 +934,9 @@ body,button {
 	color:#127184
 }
 .page-29 {
-	background:#0d85d1;
-	padding:0
+	background:#0d85d1 url('img/123.jpg') no-repeat center center; /* 替换为实际的背景颜色和背景图片 */
+	padding:0;
+	background-size: cover; /* 使背景图片覆盖整个容器 */
 }
 .page-29 h3 {
 	position:absolute;
@@ -940,9 +946,9 @@ body,button {
 	color:#eef
 }
 .page-30 {
-	background:#fff url(img/iali76_bg.png) center bottom repeat-x;
+	background:#fff url(img/bachong.png) no-repeat center center;
 	padding:0;
-	padding:0
+	background-size: cover;
 }
 .page-30 img {
 	position:absolute;
@@ -950,28 +956,42 @@ body,button {
 	left:0
 }
 .page-31 {
-	background-color:#fbf5e9
+	background:#fbf5e9 url(img/nwy.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
+}
+.page-31 h3{
+	color:#bc195b;
 }
 .page-32 {
-	background-color:#faf2e5
+	background:#fbf5e9 url(img/xgw.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
+}
+.page-32 h3{
+	color:#e6dfe2;
 }
 .page-33 {
-	background-color:#fef0d5;
-	padding:0
+	background:#fbf5e9 url(img/kw.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
 }
 .page-33 h3 {
 	font-size:1.8em;
 	color:#a58545
 }
 .page-34 {
-	background:#94c2e3 url(img/iali57.jpg) left bottom no-repeat
+	background:#fbf5e9 url(img/mlx.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
 }
 .page-34 h3 {
-	color:#fff
+	color:#dd0b2e
 }
 .page-35 {
-	background:#fff url(img/iali8_bg.png) left bottom repeat-x;
-	padding:0
+	background:#fbf5e9 url(img/shuangzi.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
 }
 .page-35 img {
 	position:absolute;
@@ -983,14 +1003,19 @@ body,button {
 	position:absolute;
 	right:10%;
 	top:5%;
-	color:green;
+	color:rgb(218, 252, 29);
 	z-index:2;
 	font-size:2em
+}
+.page-36{background:#fbf5e9 url(img/shenzi.png) no-repeat center center;
+	padding:0;
+	background-size: cover;
+
 }
 .page-36 h3 {
 	text-align:right;
 	right:1.5em;
-	color:#eee
+	color:#001aff
 }
 .page-37 {
 	background-color:#fff
@@ -1092,8 +1117,8 @@ body,button {
 	margin-left:-40%;
 	padding:0;
 	margin-top:0;
-	width:10em;
-	text-align:left
+	width:auto;
+	text-align:center
 }
 .page-47 h3 span {
 	display:inline-block;
